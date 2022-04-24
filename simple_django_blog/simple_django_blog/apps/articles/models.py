@@ -14,8 +14,8 @@ class Article(models.Model):
     def __str__(self):
         return self.article_title
 
-    def was_publish_risently(self):
-        return self.pub_date >= (timezone.now - datetime.timedelta(days=7))
+    def was_published_recently(self):
+        return self.pub_date >= (timezone.now() - datetime.timedelta(days=7))
 
     # переименовать для админки
     class Meta:

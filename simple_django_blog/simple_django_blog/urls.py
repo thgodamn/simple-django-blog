@@ -19,5 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('articles/', include('articles.urls')), #include(название приложения, urls.py привязок)
     path('admin/', admin.site.urls),
-    path ('grappelli/', include('grappelli.urls'))
+    path('grappelli/', include('grappelli.urls')),
 ]
